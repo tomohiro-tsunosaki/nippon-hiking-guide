@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>お問い合わせ | にっぽんハイキングガイド</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .contact-form { max-width: 600px; margin: 0 auto; }
+    .form-group { margin-bottom: 24px; }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+      color: var(--color-primary-dark);
+    }
+    .form-group .required {
+      background: var(--color-hard);
+      color: white;
+      font-size: 0.68rem;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+      font-weight: 700;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #dde8e2;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-family: var(--font-main);
+      color: var(--color-text);
+      transition: border-color 0.2s;
+      background: white;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+    textarea.form-control { resize: vertical; min-height: 140px; }
+    .form-note { font-size: 0.8rem; color: var(--color-text-sub); margin-top: 6px; }
+    .btn-submit {
+      display: block;
+      width: 100%;
+      background: var(--color-primary);
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: var(--font-main);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover { background: var(--color-primary-dark); }
+    /* Googleフォーム埋め込み用 */
+    .google-form-embed {
+      background: #f0f7f2;
+      border: 2px dashed var(--color-primary-light);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+      color: var(--color-text-sub);
+    }
+    .google-form-embed .embed-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .google-form-embed p { font-size: 0.9rem; line-height: 1.7; }
+    .google-form-embed code {
+      display: block;
+      background: #e8f4ee;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 0.82rem;
+      margin-top: 12px;
+      text-align: left;
+      color: #1b4332;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-icon">⛰️</span>
+          <span class="logo-text">にっぽんハイキングガイド</span>
+        </a>
+      </div>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html#regions">地域から探す</a></li>
+          <li><a href="index.html#difficulty">難易度から探す</a></li>
+          <li><a href="index.html#season">季節から探す</a></li>
+          <li><a href="gear/index.html" class="nav-gear">装備ガイド</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">ホーム</a></li>
+        <li>お問い合わせ</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container" style="max-width: 700px; padding: 56px 20px 80px;">
+
+      <h1 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; color: var(--color-primary-dark);">お問い合わせ</h1>
+      <p style="color: var(--color-text-sub); margin-bottom: 36px; font-size: 0.92rem;">ご意見・掲載情報の修正依頼・取材・広告に関するお問い合わせはこちらからどうぞ。</p>
+
+      <!-- Googleフォーム埋め込みエリア -->
+      <div class="google-form-embed">
+        <div class="embed-icon">📋</div>
+        <p><strong>Googleフォームを埋め込んでください</strong><br>
+        Googleフォームを作成後、以下のiframeコードをこの部分と置き換えてください。<br>
+        無料・迷惑メール対策済み・スパム耐性ありで最も手軽な方法です。</p>
+        <code>&lt;iframe src="https://docs.google.com/forms/d/e/【フォームID】/viewform?embedded=true"
+  width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0"&gt;
+  読み込んでいます…
+&lt;/iframe&gt;</code>
+        <p style="margin-top: 12px; font-size: 0.82rem;">作成方法は下部の「Googleフォームの作り方」を参照してください。</p>
+      </div>
+
+      <div style="margin-top: 40px; background: #fff9e6; border-radius: var(--radius); padding: 20px;">
+        <h3 style="font-size: 0.95rem; margin-bottom: 8px; color: #7a5800;">⚠️ ご注意</h3>
+        <ul style="list-style: disc; padding-left: 18px; font-size: 0.85rem; color: var(--color-text-sub); display: flex; flex-direction: column; gap: 4px;">
+          <li>ハイキング中の緊急事態は、110番・119番に直接お電話ください。</li>
+          <li>コース情報の正確性は保証できません。登山前は公式情報を必ずご確認ください。</li>
+          <li>ご返信までに数日いただく場合があります。</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo"><span>⛰️</span> にっぽんハイキングガイド</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">このサイトについて</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 にっぽんハイキングガイド. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

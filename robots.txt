@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /contact.html
+Disallow: /privacy.html
+
+Sitemap: https://www.nippon-hiking-guide.com/sitemap.xml

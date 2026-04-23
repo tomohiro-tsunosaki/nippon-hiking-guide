@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サイトマップ | にっぽんハイキングガイド</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .sitemap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .sitemap-col h2 { font-size: 1rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--color-primary-light); }
+    .sitemap-col ul { display: flex; flex-direction: column; gap: 8px; }
+    .sitemap-col li { font-size: 0.88rem; }
+    .sitemap-col a { color: var(--color-primary); text-decoration: underline; }
+    .sitemap-col a:hover { color: var(--color-primary-dark); }
+    @media (max-width: 768px) { .sitemap-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html"><span class="logo-icon">⛰️</span><span class="logo-text">にっぽんハイキングガイド</span></a>
+      </div>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html#regions">地域から探す</a></li>
+          <li><a href="index.html#difficulty">難易度から探す</a></li>
+          <li><a href="index.html#season">季節から探す</a></li>
+          <li><a href="gear/index.html" class="nav-gear">装備ガイド</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <div class="container"><ol><li><a href="index.html">ホーム</a></li><li>サイトマップ</li></ol></div>
+  </nav>
+
+  <main>
+    <div class="container" style="padding: 56px 20px 80px;">
+      <h1 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 40px; color: var(--color-primary-dark);">サイトマップ</h1>
+
+      <div class="sitemap-grid">
+        <div class="sitemap-col">
+          <h2>🗾 地域別コース</h2>
+          <ul>
+            <li><a href="regions/hokkaido/">北海道のコース一覧</a></li>
+            <li><a href="regions/hokkaido/daisetsuzan.html">大雪山（旭岳）</a></li>
+            <li><a href="regions/hokkaido/shiretoko.html">知床・羅臼岳</a></li>
+            <li><a href="regions/tohoku/">東北のコース一覧</a></li>
+            <li><a href="regions/kanto/">関東のコース一覧</a></li>
+            <li><a href="regions/kanto/takao.html">高尾山</a></li>
+            <li><a href="regions/chubu/">中部のコース一覧</a></li>
+            <li><a href="regions/chubu/fuji.html">富士山（吉田ルート）</a></li>
+            <li><a href="regions/chubu/kamikochi.html">上高地・涸沢カール</a></li>
+            <li><a href="regions/kinki/">近畿のコース一覧</a></li>
+            <li><a href="regions/chugoku/">中国のコース一覧</a></li>
+            <li><a href="regions/shikoku/">四国のコース一覧</a></li>
+            <li><a href="regions/kyushu/">九州・沖縄のコース一覧</a></li>
+            <li><a href="regions/kyushu/yakushima.html">屋久島（縄文杉）</a></li>
+            <li><a href="regions/kyushu/aso.html">阿蘇山</a></li>
+          </ul>
+        </div>
+
+        <div class="sitemap-col">
+          <h2>🎒 装備ガイド</h2>
+          <ul>
+            <li><a href="gear/index.html">装備ガイドTOP</a></li>
+            <li><a href="gear/shoes.html">登山靴・トレッキングシューズ</a></li>
+            <li><a href="gear/pack.html">ザック・バックパック</a></li>
+            <li><a href="gear/rain.html">レインウェア（雨具）</a></li>
+            <li><a href="gear/pole.html">トレッキングポール</a></li>
+            <li><a href="gear/wear.html">ウェア・レイヤリング</a></li>
+            <li><a href="gear/safety.html">安全・サバイバル装備</a></li>
+            <li><a href="gear/fuji-checklist.html">富士山チェックリスト</a></li>
+          </ul>
+
+          <h2 style="margin-top: 24px;">📅 難易度・季節</h2>
+          <ul>
+            <li><a href="difficulty/beginner.html">初級コース一覧</a></li>
+            <li><a href="difficulty/intermediate.html">中級コース一覧</a></li>
+            <li><a href="difficulty/advanced.html">上級コース一覧</a></li>
+            <li><a href="season/spring.html">春のおすすめ</a></li>
+            <li><a href="season/summer.html">夏のおすすめ</a></li>
+            <li><a href="season/autumn.html">秋のおすすめ</a></li>
+            <li><a href="season/winter.html">冬のおすすめ</a></li>
+          </ul>
+        </div>
+
+        <div class="sitemap-col">
+          <h2>📝 ブログ・お役立ち</h2>
+          <ul>
+            <li><a href="blog/beginner-gear.html">初心者が揃えるべき5つの道具</a></li>
+            <li><a href="blog/autumn-2026.html">2026年秋の紅葉おすすめ10選</a></li>
+            <li><a href="blog/fuji-2026.html">富士山2026年シーズン情報</a></li>
+          </ul>
+
+          <h2 style="margin-top: 24px;">📋 サイト情報</h2>
+          <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="about.html">このサイトについて</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="sitemap.html">サイトマップ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo"><span>⛰️</span> にっぽんハイキングガイド</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">このサイトについて</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 にっぽんハイキングガイド. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

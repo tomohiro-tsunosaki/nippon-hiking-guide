@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日本全国のハイキングコースを紹介。初心者から上級者まで、難易度・地域・季節別におすすめコースをまとめています。">
+  <meta name="keywords" content="ハイキング,登山,日帰りトレッキング,初心者,日本,おすすめコース">
+  <meta property="og:title" content="にっぽんハイキングガイド｜日本全国のハイキングコース紹介">
+  <meta property="og:description" content="初心者から上級者まで、日本全国のハイキングコースを難易度・地域・季節別に紹介。">
+  <meta property="og:type" content="website">
+  <title>にっぽんハイキングガイド｜日本全国のハイキングコース紹介</title>
+
+  <!-- ★ Google Analytics：G-XXXXXXXXXXを自分のIDに変更 -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <!-- ★ Google AdSense：ca-pub-XXXXXXXXXXXXXXXXを自分のIDに変更（審査通過後に有効化） -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+       crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-icon">⛰️</span>
+          <span class="logo-text">にっぽんハイキングガイド</span>
+        </a>
+      </div>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="#regions">地域から探す</a></li>
+          <li><a href="#difficulty">難易度から探す</a></li>
+          <li><a href="#season">季節から探す</a></li>
+          <li><a href="gear/index.html" class="nav-gear">装備ガイド</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-sub">日本全国 300コース以上を掲載</p>
+      <h1 class="hero-title">あなたにぴったりの<br>ハイキングコースを見つけよう</h1>
+      <p class="hero-desc">初心者〜上級者まで、難易度・地域・季節別に日本全国のおすすめハイキングコースをご紹介します。</p>
+      <div class="hero-search">
+        <input type="text" placeholder="山の名前・地域を検索..." class="search-input">
+        <button class="search-btn">検索</button>
+      </div>
+      <div class="hero-tags">
+        <span>人気タグ：</span>
+        <a href="#" class="tag">初心者向け</a>
+        <a href="#" class="tag">日帰り</a>
+        <a href="#" class="tag">子連れOK</a>
+        <a href="#" class="tag">絶景</a>
+        <a href="#" class="tag">紅葉</a>
+      </div>
+    </div>
+    <div class="hero-scroll">▼ スクロール</div>
+  </section>
+
+  <!-- 人気コース TOP10 -->
+  <section class="popular-courses" id="popular">
+    <div class="container">
+      <h2 class="section-title">人気コース <span>TOP 10</span></h2>
+      <p class="section-desc">アクセス数・口コミをもとに選んだ、今月の人気ランキングです。</p>
+      <div class="course-grid">
+
+        <article class="course-card rank-1">
+          <div class="rank-badge">1</div>
+          <div class="course-img" style="background-image: url('images/takao.jpg');">
+            <div class="course-img-placeholder">🏔️</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">関東・東京</span>
+              <span class="difficulty easy">初級</span>
+            </div>
+            <h3><a href="regions/kanto/takao.html">高尾山</a></h3>
+            <p class="course-desc">都心から1時間。日本一登山者数が多い山。整備された複数コースで初心者も安心。</p>
+            <ul class="course-stats">
+              <li>📏 距離：3.8km</li>
+              <li>⏱ 所要：約2時間</li>
+              <li>📈 標高差：404m</li>
+            </ul>
+            <a href="regions/kanto/takao.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card rank-2">
+          <div class="rank-badge">2</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🗻</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">中部・静岡</span>
+              <span class="difficulty hard">上級</span>
+            </div>
+            <h3><a href="regions/chubu/fuji.html">富士山（吉田ルート）</a></h3>
+            <p class="course-desc">日本最高峰3,776m。世界遺産にも登録された象徴的な山。7〜9月が登山シーズン。</p>
+            <ul class="course-stats">
+              <li>📏 距離：14km</li>
+              <li>⏱ 所要：約10〜12時間</li>
+              <li>📈 標高差：1,488m</li>
+            </ul>
+            <a href="regions/chubu/fuji.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card rank-3">
+          <div class="rank-badge">3</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🌿</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">九州・鹿児島</span>
+              <span class="difficulty medium">中級</span>
+            </div>
+            <h3><a href="regions/kyushu/yakushima.html">屋久島（縄文杉コース）</a></h3>
+            <p class="course-desc">樹齢7,200年の縄文杉を目指す。世界自然遺産の原生林を歩く特別な体験。</p>
+            <ul class="course-stats">
+              <li>📏 距離：22km</li>
+              <li>⏱ 所要：約10時間</li>
+              <li>📈 標高差：600m</li>
+            </ul>
+            <a href="regions/kyushu/yakushima.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">4</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🏔️</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">中部・長野</span>
+              <span class="difficulty medium">中級</span>
+            </div>
+            <h3><a href="regions/chubu/kamikochi.html">上高地・涸沢カール</a></h3>
+            <p class="course-desc">日本屈指の山岳リゾート。秋の紅葉シーズンは圧倒的な絶景が広がる。</p>
+            <ul class="course-stats">
+              <li>📏 距離：18km</li>
+              <li>⏱ 所要：約8時間</li>
+              <li>📈 標高差：800m</li>
+            </ul>
+            <a href="regions/chubu/kamikochi.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">5</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🌋</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">九州・熊本</span>
+              <span class="difficulty medium">中級</span>
+            </div>
+            <h3><a href="regions/kyushu/aso.html">阿蘇山（仙酔峡コース）</a></h3>
+            <p class="course-desc">世界最大級のカルデラを誇る活火山。雄大な草千里の絶景とダイナミックな火口を望む。</p>
+            <ul class="course-stats">
+              <li>📏 距離：5km</li>
+              <li>⏱ 所要：約3時間</li>
+              <li>📈 標高差：450m</li>
+            </ul>
+            <a href="regions/kyushu/aso.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">6</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">❄️</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">北海道</span>
+              <span class="difficulty medium">中級</span>
+            </div>
+            <h3><a href="regions/hokkaido/daisetsuzan.html">大雪山（旭岳）</a></h3>
+            <p class="course-desc">北海道最高峰2,291m。日本で最も早い紅葉が楽しめる。ロープウェイ利用で手軽にアクセス。</p>
+            <ul class="course-stats">
+              <li>📏 距離：8km</li>
+              <li>⏱ 所要：約5時間</li>
+              <li>📈 標高差：670m</li>
+            </ul>
+            <a href="regions/hokkaido/daisetsuzan.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">7</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🌊</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">北海道</span>
+              <span class="difficulty hard">上級</span>
+            </div>
+            <h3><a href="regions/hokkaido/shiretoko.html">知床・羅臼岳</a></h3>
+            <p class="course-desc">世界自然遺産・知床の最高峰。ヒグマが生息する大自然の中を歩く本格登山。</p>
+            <ul class="course-stats">
+              <li>📏 距離：12km</li>
+              <li>⏱ 所要：約8時間</li>
+              <li>📈 標高差：1,400m</li>
+            </ul>
+            <a href="regions/hokkaido/shiretoko.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">8</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🌸</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">近畿・奈良</span>
+              <span class="difficulty easy">初級</span>
+            </div>
+            <h3><a href="regions/kinki/yoshino.html">吉野山（花見コース）</a></h3>
+            <p class="course-desc">3万本の桜が咲き誇る日本一の花見山。世界遺産の修験道が通るパワースポット。</p>
+            <ul class="course-stats">
+              <li>📏 距離：6km</li>
+              <li>⏱ 所要：約3時間</li>
+              <li>📈 標高差：300m</li>
+            </ul>
+            <a href="regions/kinki/yoshino.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">9</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🗼</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">中部・長野</span>
+              <span class="difficulty easy">初級</span>
+            </div>
+            <h3><a href="regions/chubu/kirigamine.html">霧ヶ峰（車山）</a></h3>
+            <p class="course-desc">一面のニッコウキスゲが咲く高原。家族連れにも人気の展望ハイキング。</p>
+            <ul class="course-stats">
+              <li>📏 距離：5km</li>
+              <li>⏱ 所要：約2.5時間</li>
+              <li>📈 標高差：200m</li>
+            </ul>
+            <a href="regions/chubu/kirigamine.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="rank-badge">10</div>
+          <div class="course-img">
+            <div class="course-img-placeholder">🌅</div>
+          </div>
+          <div class="course-info">
+            <div class="course-meta">
+              <span class="region-tag">四国・愛媛</span>
+              <span class="difficulty medium">中級</span>
+            </div>
+            <h3><a href="regions/shikoku/ishizuchi.html">石鎚山</a></h3>
+            <p class="course-desc">西日本最高峰1,982m。鎖場が続くスリリングなコースと山頂からの360度パノラマ。</p>
+            <ul class="course-stats">
+              <li>📏 距離：10km</li>
+              <li>⏱ 所要：約6時間</li>
+              <li>📈 標高差：1,000m</li>
+            </ul>
+            <a href="regions/shikoku/ishizuchi.html" class="btn-detail">詳細を見る</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 地域から探す -->
+  <section class="regions" id="regions">
+    <div class="container">
+      <h2 class="section-title">地域から探す</h2>
+      <p class="section-desc">お住まいの近く、または旅行先でハイキングを楽しもう。</p>
+      <div class="region-map-wrap">
+        <div class="region-grid">
+          <a href="regions/hokkaido/" class="region-card">
+            <span class="region-emoji">🐻</span>
+            <span class="region-name">北海道</span>
+            <span class="region-count">42コース</span>
+          </a>
+          <a href="regions/tohoku/" class="region-card">
+            <span class="region-emoji">🌾</span>
+            <span class="region-name">東北</span>
+            <span class="region-count">38コース</span>
+          </a>
+          <a href="regions/kanto/" class="region-card">
+            <span class="region-emoji">🗼</span>
+            <span class="region-name">関東</span>
+            <span class="region-count">55コース</span>
+          </a>
+          <a href="regions/chubu/" class="region-card">
+            <span class="region-emoji">🗻</span>
+            <span class="region-name">中部</span>
+            <span class="region-count">61コース</span>
+          </a>
+          <a href="regions/kinki/" class="region-card">
+            <span class="region-emoji">🦌</span>
+            <span class="region-name">近畿</span>
+            <span class="region-count">34コース</span>
+          </a>
+          <a href="regions/chugoku/" class="region-card">
+            <span class="region-emoji">⛩️</span>
+            <span class="region-name">中国</span>
+            <span class="region-count">22コース</span>
+          </a>
+          <a href="regions/shikoku/" class="region-card">
+            <span class="region-emoji">🍊</span>
+            <span class="region-name">四国</span>
+            <span class="region-count">18コース</span>
+          </a>
+          <a href="regions/kyushu/" class="region-card">
+            <span class="region-emoji">🌋</span>
+            <span class="region-name">九州・沖縄</span>
+            <span class="region-count">35コース</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 難易度から探す -->
+  <section class="difficulty-section" id="difficulty">
+    <div class="container">
+      <h2 class="section-title">難易度から探す</h2>
+      <div class="difficulty-cards">
+        <a href="difficulty/beginner.html" class="diff-card diff-easy">
+          <div class="diff-icon">🟢</div>
+          <h3>初級</h3>
+          <p>登山経験不要。整備された道で安心して歩ける。所要2〜4時間が目安。</p>
+          <span class="diff-example">例：高尾山・六甲山・筑波山</span>
+          <span class="diff-btn">初級コースを見る</span>
+        </a>
+        <a href="difficulty/intermediate.html" class="diff-card diff-medium">
+          <div class="diff-icon">🟡</div>
+          <h3>中級</h3>
+          <p>基本的な登山装備が必要。体力と経験がある方向け。所要4〜8時間。</p>
+          <span class="diff-example">例：屋久島・上高地・八ヶ岳</span>
+          <span class="diff-btn">中級コースを見る</span>
+        </a>
+        <a href="difficulty/advanced.html" class="diff-card diff-hard">
+          <div class="diff-icon">🔴</div>
+          <h3>上級</h3>
+          <p>十分な経験と装備が必須。体力・技術が求められる本格登山。</p>
+          <span class="diff-example">例：富士山・穂高・知床</span>
+          <span class="diff-btn">上級コースを見る</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 季節から探す -->
+  <section class="season-section" id="season">
+    <div class="container">
+      <h2 class="section-title">季節から探す</h2>
+      <div class="season-cards">
+        <a href="season/spring.html" class="season-card spring">
+          <span class="season-icon">🌸</span>
+          <h3>春（3〜5月）</h3>
+          <p>新緑・桜・ミズバショウ。低山ハイキングに最適なシーズン。</p>
+        </a>
+        <a href="season/summer.html" class="season-card summer">
+          <span class="season-icon">☀️</span>
+          <h3>夏（6〜8月）</h3>
+          <p>富士登山・高山植物が見頃。アルプスや北海道が人気。</p>
+        </a>
+        <a href="season/autumn.html" class="season-card autumn">
+          <span class="season-icon">🍁</span>
+          <h3>秋（9〜11月）</h3>
+          <p>紅葉が最高潮。涸沢カール・大雪山が特におすすめ。</p>
+        </a>
+        <a href="season/winter.html" class="season-card winter">
+          <span class="season-icon">❄️</span>
+          <h3>冬（12〜2月）</h3>
+          <p>雪山ハイキング・スノーシュー。装備と経験が必要。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装備ガイドバナー（アフィリエイト誘導） -->
+  <section class="gear-banner">
+    <div class="container">
+      <div class="gear-banner-inner">
+        <div class="gear-text">
+          <h2>はじめてのハイキング装備、何が必要？</h2>
+          <p>初心者が揃えるべき必須アイテムをプロが厳選。予算別おすすめリストも掲載中。</p>
+          <a href="gear/index.html" class="btn-gear">装備ガイドを見る →</a>
+        </div>
+        <div class="gear-icons">
+          <span>🥾</span><span>🎒</span><span>🧥</span><span>🗺️</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新記事 -->
+  <section class="latest-articles">
+    <div class="container">
+      <h2 class="section-title">最新記事・お役立ち情報</h2>
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-img-placeholder">📝</div>
+          <div class="article-body">
+            <span class="article-tag">初心者ガイド</span>
+            <h3><a href="blog/beginner-gear.html">ハイキング初心者が最初に揃えるべき5つの道具</a></h3>
+            <time>2026年4月20日</time>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-img-placeholder">🍁</div>
+          <div class="article-body">
+            <span class="article-tag">季節情報</span>
+            <h3><a href="blog/autumn-2026.html">2026年秋の紅葉ハイキングおすすめ10選</a></h3>
+            <time>2026年4月18日</time>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-img-placeholder">🗻</div>
+          <div class="article-body">
+            <span class="article-tag">コース紹介</span>
+            <h3><a href="blog/fuji-2026.html">富士山2026年シーズン情報｜登山規制・混雑を避けるコツ</a></h3>
+            <time>2026年4月15日</time>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span>⛰️</span> にっぽんハイキングガイド
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="about.html">このサイトについて</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">&copy; 2026 にっぽんハイキングガイド. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

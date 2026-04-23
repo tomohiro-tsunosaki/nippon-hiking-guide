@@ -1,0 +1,598 @@
+/* ==============================
+   装備ガイド専用CSS
+============================== */
+
+/* ヒーロー */
+.gear-hero {
+  background: linear-gradient(135deg, #7f4f24, #b5651d, #e07b39);
+  padding: 72px 0 60px;
+  color: white;
+  text-align: center;
+}
+
+.gear-hero-label {
+  display: inline-block;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 20px;
+  padding: 4px 18px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+  letter-spacing: 0.06em;
+}
+
+.gear-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 14px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+.gear-hero p {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   装備カテゴリナビ
+============================== */
+.gear-nav {
+  background: white;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 64px;
+  z-index: 90;
+}
+
+.gear-nav-inner {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.gear-nav-inner::-webkit-scrollbar { display: none; }
+
+.gear-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-sub);
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+  text-decoration: none;
+}
+
+.gear-nav-item span:first-child { font-size: 1.4rem; }
+
+.gear-nav-item:hover,
+.gear-nav-item.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+/* ==============================
+   予算セレクター
+============================== */
+.budget-selector {
+  background: #fff9f0;
+  border: 2px solid #f4c57a;
+  border-radius: var(--radius);
+  padding: 28px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.budget-selector h2 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: var(--color-primary-dark);
+}
+
+.budget-tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.budget-tab {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-main);
+  transition: all var(--transition);
+  color: var(--color-text);
+}
+
+.budget-tab:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.budget-tab.active { background: var(--color-accent); border-color: var(--color-accent); color: white; }
+
+/* ==============================
+   装備カテゴリカード（トップ）
+============================== */
+.gear-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.gear-cat-card {
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.gear-cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.gear-cat-img {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: linear-gradient(135deg, #fde8d0, #f9c78a);
+}
+
+.gear-cat-img.shoes-bg  { background: linear-gradient(135deg, #fde8d0, #f9c78a); }
+.gear-cat-img.pack-bg   { background: linear-gradient(135deg, #d4e8f9, #9ac8f0); }
+.gear-cat-img.rain-bg   { background: linear-gradient(135deg, #d4eaf9, #7ab8e8); }
+.gear-cat-img.pole-bg   { background: linear-gradient(135deg, #d9f0d4, #88cca0); }
+.gear-cat-img.wear-bg   { background: linear-gradient(135deg, #ecddf7, #c09ae0); }
+.gear-cat-img.safety-bg { background: linear-gradient(135deg, #fde8e8, #f0a0a0); }
+
+.gear-cat-body {
+  padding: 18px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gear-cat-body h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--color-primary-dark);
+}
+
+.gear-cat-body p {
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+  flex: 1;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.gear-cat-price {
+  font-size: 0.82rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.btn-gear-cat {
+  display: block;
+  background: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 9px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background var(--transition);
+}
+
+.btn-gear-cat:hover { background: var(--color-primary-dark); }
+
+/* ==============================
+   初心者向けリスト（トップページ）
+============================== */
+.checklist-section {
+  background: linear-gradient(135deg, #f0f7f2, #e8f4ee);
+  border-radius: var(--radius);
+  padding: 36px;
+  margin-bottom: 64px;
+}
+
+.checklist-section h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.checklist-section .sub {
+  text-align: center;
+  color: var(--color-text-sub);
+  font-size: 0.88rem;
+  margin-bottom: 28px;
+}
+
+.checklist-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.checklist-col h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-primary-light);
+}
+
+.checklist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+}
+
+.check-item input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.check-label { line-height: 1.4; }
+.check-label strong { display: block; font-size: 0.88rem; }
+.check-label span { font-size: 0.78rem; color: var(--color-text-sub); }
+
+/* ==============================
+   商品詳細ページ共通
+============================== */
+.product-hero {
+  background: linear-gradient(135deg, #3d2b1f, #7f4f24);
+  padding: 56px 0 48px;
+  color: white;
+}
+
+.product-hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.product-hero-icon {
+  font-size: 6rem;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-hero-text h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-hero-text p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ==============================
+   商品比較テーブル
+============================== */
+.product-compare {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87rem;
+  background: white;
+  min-width: 700px;
+}
+
+.compare-table th {
+  background: var(--color-primary);
+  color: white;
+  padding: 13px 14px;
+  text-align: left;
+}
+
+.compare-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:hover td { background: #f8faf8; }
+
+.recommended-badge {
+  background: var(--color-accent);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+/* Amazonリンクボタン */
+.btn-amazon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ff9900;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: background var(--transition);
+  white-space: nowrap;
+}
+
+.btn-amazon:hover { background: #e88800; }
+
+/* 楽天リンクボタン */
+.btn-rakuten {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #bf0000;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: background var(--transition);
+  white-space: nowrap;
+}
+
+.btn-rakuten:hover { background: #990000; }
+
+.shop-btns {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* ==============================
+   予算別おすすめセクション
+============================== */
+.budget-section { margin-bottom: 56px; }
+
+.budget-panels {
+  display: none;
+}
+
+.budget-panels.active { display: block; }
+
+.budget-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.budget-card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.budget-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.budget-card-header {
+  padding: 14px 18px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.budget-low .budget-card-header    { background: #52b788; }
+.budget-mid .budget-card-header    { background: #4a90d9; }
+.budget-high .budget-card-header   { background: #7b4fa2; }
+
+.budget-card-body {
+  padding: 18px;
+}
+
+.budget-card-icon { font-size: 3rem; text-align: center; margin-bottom: 10px; }
+
+.budget-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: var(--color-primary-dark);
+}
+
+.budget-card .price-range {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.budget-card p {
+  font-size: 0.83rem;
+  color: var(--color-text-sub);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.budget-card ul {
+  list-style: disc;
+  padding-left: 16px;
+  font-size: 0.82rem;
+  color: var(--color-text-sub);
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+
+/* ==============================
+   ポイント解説ボックス
+============================== */
+.point-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.point-box {
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.point-num {
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.point-box h3 { font-size: 0.95rem; margin-bottom: 4px; }
+.point-box p  { font-size: 0.83rem; color: var(--color-text-sub); margin: 0; line-height: 1.6; }
+
+/* ==============================
+   Q&A セクション
+============================== */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text);
+  transition: background var(--transition);
+}
+
+.faq-question::before {
+  content: 'Q.';
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.faq-question:hover { background: #f8faf8; }
+
+.faq-toggle {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+.faq-answer {
+  display: none;
+  padding: 0 20px 16px 20px;
+  font-size: 0.87rem;
+  color: var(--color-text-sub);
+  line-height: 1.8;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+}
+
+.faq-answer::before {
+  content: 'A. ';
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.faq-item.open .faq-answer { display: block; }
+
+/* ==============================
+   レスポンシブ（装備ページ）
+============================== */
+@media (max-width: 1024px) {
+  .gear-category-grid { grid-template-columns: repeat(3, 1fr); }
+  .budget-cards { grid-template-columns: repeat(2, 1fr); }
+  .checklist-cols { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .gear-category-grid { grid-template-columns: repeat(2, 1fr); }
+  .budget-cards { grid-template-columns: 1fr; }
+  .checklist-cols { grid-template-columns: 1fr; }
+  .point-boxes { grid-template-columns: 1fr; }
+  .product-hero-inner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .gear-category-grid { grid-template-columns: 1fr; }
+}
