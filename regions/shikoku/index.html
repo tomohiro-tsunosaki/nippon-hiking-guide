@@ -11,79 +11,142 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>四国のハイキングコース | にっぽんハイキングガイド</title>
+  <meta name="description" content="四国のおすすめハイキングコース一覧。石鎚山・剣山など西日本最高峰を擁する四国の山々を紹介。">
+  <meta property="og:title" content="四国のハイキング | &#12395;&#12387;&#12413;&#12435;&#12495;&#12452;&#12461;&#12531;&#12464;&#12460;&#12452;&#12489;">
+  <meta property="og:description" content="四国のおすすめハイキングコース一覧。石鎚山・剣山など西日本最高峰を擁する四国の山々を紹介。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/regions/shikoku/">
+  <meta property="og:site_name" content="&#12395;&#12387;&#12413;&#12435;&#12495;&#12452;&#12461;&#12531;&#12464;&#12460;&#12452;&#12489;">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <title>四国のハイキング | &#12395;&#12387;&#12413;&#12435;&#12495;&#12452;&#12461;&#12531;&#12464;&#12460;&#12452;&#12489;</title>
   <link rel="stylesheet" href="../../css/style.css">
+  <link rel="canonical" href="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/regions/shikoku/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    .coming-soon { text-align: center; padding: 80px 20px; max-width: 600px; margin: 0 auto; }
-    .coming-soon .icon { font-size: 4rem; margin-bottom: 16px; }
-    .coming-soon h1 { font-size: 1.8rem; color: var(--color-primary-dark); margin-bottom: 12px; }
-    .coming-soon p { color: var(--color-text-sub); line-height: 1.8; margin-bottom: 24px; }
-    .coming-soon .badge { display: inline-block; background: var(--color-primary-light); color: var(--color-primary-dark); font-size: 0.8rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
-    .btn-back { display: inline-block; background: var(--color-primary); color: white; padding: 12px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.2s; }
-    .btn-back:hover { background: var(--color-primary-dark); }
+    .region-hero{background:linear-gradient(135deg,#2d6a4f 0%,#40916c 100%);color:white;padding:60px 20px;text-align:center;}
+    .region-hero h1{font-size:2.5rem;margin-bottom:12px;}
+    .region-hero p{font-size:1.1rem;opacity:.9;max-width:640px;margin:8px auto 0;}
+    .region-hero-emoji{font-size:3rem;margin-bottom:12px;}
+    .course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin:40px 0;}
+    .course-card{background:white;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;transition:transform .2s;}
+    .course-card:hover{transform:translateY(-4px);}
+    .card-img{height:150px;display:flex;align-items:center;justify-content:center;font-size:4rem;background:#f0f7f4;}
+    .card-body{padding:20px;}
+    .card-badges{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;}
+    .bdiff{padding:3px 10px;border-radius:20px;font-size:.75rem;font-weight:700;}
+    .bdiff.easy{background:#d8f3dc;color:#1b4332;}
+    .bdiff.medium{background:#fff3cd;color:#856404;}
+    .bdiff.hard{background:#fde8e8;color:#9b1c1c;}
+    .card-title{font-size:1.2rem;font-weight:700;color:#1b4332;margin-bottom:6px;}
+    .card-meta{font-size:.82rem;color:#666;margin-bottom:10px;}
+    .card-desc{font-size:.88rem;color:#444;line-height:1.6;margin-bottom:14px;}
+    .btn-course{display:inline-block;background:#2d6a4f;color:white;padding:9px 22px;border-radius:8px;font-weight:700;text-decoration:none;font-size:.88rem;}
+    .btn-course:hover{background:#1b4332;}
+    .region-info{background:#f0f7f4;border-radius:12px;padding:28px 32px;margin:32px 0;}
+    .region-info h2{color:#1b4332;margin-bottom:12px;}
+    .region-info p{color:#333;line-height:1.8;}
+    .section-title{font-size:1.6rem;font-weight:700;color:#1b4332;margin:48px 0 8px;border-bottom:3px solid #2d6a4f;padding-bottom:8px;}
   </style>
-
-  <meta name="description" content="四国のハイキングコース一覧。石鎚山など愛媛・高知・徳島・香川のおすすめハイキングスポットを紹介。">
-  <link rel="canonical" href="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/regions/shikoku/index.html">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="四国のハイキングコース | にっぽんハイキングガイド">
-  <meta property="og:description" content="四国のハイキングコース一覧。石鎚山など愛媛・高知・徳島・香川のおすすめハイキングスポットを紹介。">
-  <meta property="og:url" content="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/regions/shikoku/index.html">
-  <meta property="og:site_name" content="にっぽんハイキングガイド">
-  <meta property="og:locale" content="ja_JP">
-  <meta name="twitter:card" content="summary">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <a href="../../index.html">
-          <span class="logo-icon">⛰️</span>
-          <span class="logo-text">にっぽんハイキングガイド</span>
-        </a>
-      </div>
-      <nav class="global-nav">
-        <ul>
-          <li><a href="../../index.html#regions">地域から探す</a></li>
-          <li><a href="../../index.html#difficulty">難易度から探す</a></li>
-          <li><a href="../../index.html#season">季節から探す</a></li>
-          <li><a href="../../gear/index.html" class="nav-gear">装備ガイド</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
+      <div class="logo"><a href="../../index.html"><span class="logo-icon">&#9968;&#65039;</span><span class="logo-text">&#12395;&#12387;&#12413;&#12435;&#12495;&#12452;&#12461;&#12531;&#12464;&#12460;&#12452;&#12489;</span></a></div>
+      <nav class="global-nav"><ul>
+        <li><a href="../../index.html#regions">&#22320;&#22495;&#12363;&#12425;&#25506;&#12377;</a></li>
+        <li><a href="../../index.html#difficulty">&#38627;&#26131;&#24230;&#12363;&#12425;&#25506;&#12377;</a></li>
+        <li><a href="../../index.html#season">&#23395;&#31295;&#12363;&#12425;&#25506;&#12377;</a></li>
+        <li><a href="../../gear/index.html" class="nav-gear">&#35013;&#20633;&#12460;&#12452;&#12489;</a></li>
+      </ul></nav>
+      <button class="nav-toggle" aria-label="&#12�&#12491;&#12517;&#12540;">&#9776;</button>
     </div>
   </header>
-
-  <nav class="breadcrumb">
-    <div class="container">
-      <ol><li><a href="../../index.html">ホーム</a></li><li>四国</li></ol>
-    </div>
-  </nav>
-
+  <nav class="breadcrumb"><div class="container"><ol><li><a href="../../index.html">ホーム</a></li><li>四国のハイキング</li></ol></div></nav>
+  <div class="region-hero">
+    <div class="region-hero-emoji">⛩️</div>
+    <h1>四国のハイキング</h1>
+    <p>西日本最高峰の石鎚山をはじめ、四国八十八ヶ所遍路の道が続く霊験あらたかな山々。手つかずの自然と深い信仰の地、四国のハイキングへ。</p>
+  </div>
   <main>
-    <div class="coming-soon">
-      <div class="icon">🏔️</div>
-      <span class="badge">準備中</span>
-      <h1>四国のハイキングコース</h1>
-      <p>石鎚山など四国のハイキングコース一覧。<br>現在コンテンツを準備中です。<br>もうしばらくお待ちください。</p>
-      <a href="../../index.html" class="btn-back">トップページへ戻る</a>
+    <div class="container">
+      <h2 class="section-title">&#12362;&#12377;&#12377;&#12417;&#12467;&#12540;&#12473;&#19968;&#35272;</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <div class="card-img">⛩️</div>
+          <div class="card-body">
+            <div class="card-badges"><span class="bdiff hard">中級〜上級</span><span style="font-size:.75rem;color:#888;">四国</span></div>
+            <div class="card-title">石鎚山（愛媛）</div>
+            <div class="card-meta">標高1,982m・距離8km・所要5時間</div>
+            <p class="card-desc">西日本最高峰。鎖場が名物の七霊山。四国ハイキングの最高峰。</p>
+            <a href="ishizuchi.html" class="btn-course">&#35442;&#12375;&#12367;&#35211;&#12427; &#8594;</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="card-img">🏔️</div>
+          <div class="card-body">
+            <div class="card-badges"><span class="bdiff easy">初級</span><span style="font-size:.75rem;color:#888;">四国</span></div>
+            <div class="card-title">剣山（徳島）</div>
+            <div class="card-meta">標高1,955m・距離4km・所要3時間</div>
+            <p class="card-desc">四国第二の高峰。リフト利用で手軽に登れる百名山。</p>
+            <a href="#" class="btn-course">&#35442;&#12375;&#12367;&#35211;&#12427; &#8594;</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="card-img">🌿</div>
+          <div class="card-body">
+            <div class="card-badges"><span class="bdiff medium">中級</span><span style="font-size:.75rem;color:#888;">四国</span></div>
+            <div class="card-title">三嶺（高知・徳島）</div>
+            <div class="card-meta">標高1,894m・距離10km・所要6時間</div>
+            <p class="card-desc">四国の秘峰。笹原の尾根道と天空の池が絶景。</p>
+            <a href="#" class="btn-course">&#35442;&#12375;&#12367;&#35211;&#12427; &#8594;</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="card-img">🍁</div>
+          <div class="card-body">
+            <div class="card-badges"><span class="bdiff easy">初級</span><span style="font-size:.75rem;color:#888;">四国</span></div>
+            <div class="card-title">寒霞渓（香川）</div>
+            <div class="card-meta">標高618m・距離4km・所要2時間</div>
+            <p class="card-desc">小豆島の紅葉の名所。日本三大渓谷美のひとつ。ロープウェイあり。</p>
+            <a href="#" class="btn-course">&#35442;&#12375;&#12367;&#35211;&#12427; &#8594;</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="card-img">🌸</div>
+          <div class="card-body">
+            <div class="card-badges"><span class="bdiff medium">中級</span><span style="font-size:.75rem;color:#888;">四国</span></div>
+            <div class="card-title">筒上山（高知）</div>
+            <div class="card-meta">標高1,859m・距離8km・所要5時間</div>
+            <p class="card-desc">アケボノツツジの群落が美しい四国の名峰。</p>
+            <a href="#" class="btn-course">&#35442;&#12375;&#12367;&#35211;&#12427; &#8594;</a>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="card-img">🔴</div>
+          <div class="card-body">
+            <div class="card-badges"><span class="bdiff medium">中級</span><span style="font-size:.75rem;color:#888;">四国</span></div>
+            <div class="card-title">東赤石山（愛媛）</div>
+            <div class="card-meta">標高1,706m・距離8km・所要5時間</div>
+            <p class="card-desc">超塩基性岩の特殊な植生。希少な高山植物の宝庫。</p>
+            <a href="#" class="btn-course">&#35442;&#12375;&#12367;&#35211;&#12427; &#8594;</a>
+          </div>
+        </div>
+      </div>
+      <div class="region-info"><h2>四国ハイキングの特徴</h2><p>石鎚山・剣山という日本百名山を擁す。遍路文化と山岳信仰が根付く霊山が多い。本州に比べ人が少なく、静かな山行が楽しめる穴場エリア。</p></div>
     </div>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-logo"><span>⛰️</span> にっぽんハイキングガイド</div>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="../../about.html">このサイトについて</a></li>
-          <li><a href="../../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../../contact.html">お問い合わせ</a></li>
-          <li><a href="../../sitemap.html">サイトマップ</a></li>
-        </ul>
-      </nav>
-      <p class="footer-copy">&copy; 2026 にっぽんハイキングガイド. All rights reserved.</p>
+      <div class="footer-logo"><span>&#9968;&#65039;</span> &#12395;&#12387;&#12413;&#12435;&#12495;&#12452;&#12461;&#12531;&#12464;&#12460;&#12452;&#12489;</div>
+      <nav class="footer-nav"><ul>
+        <li><a href="../../about.html">&#12371;&#12398;&#12469;&#12452;&#12488;&#12395;&#12388;&#12356;&#12390;</a></li>
+        <li><a href="../../privacy.html">&#12503;&#12521;&#12452;&#12496;&#12471;&#12540;&#12509;&#12522;&#12471;&#12540;</a></li>
+        <li><a href="../../contact.html">&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;</a></li>
+        <li><a href="../../sitemap.html">&#12469;&#12452;&#12488;&#12510;&#12483;&#12503;</a></li>
+      </ul></nav>
+      <p class="footer-copy">&copy; 2026 &#12395;&#12387;&#12413;&#12435;&#12495;&#12452;&#12461;&#12531;&#12464;&#12460;&#12452;&#12489;. All rights reserved.</p>
     </div>
   </footer>
   <script src="../../js/main.js"></script>

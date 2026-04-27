@@ -11,81 +11,161 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>高山病対策ガイド | にっぽんハイキングガイド</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    .coming-soon { text-align: center; padding: 80px 20px; max-width: 600px; margin: 0 auto; }
-    .coming-soon .icon { font-size: 4rem; margin-bottom: 16px; }
-    .coming-soon h1 { font-size: 1.8rem; color: var(--color-primary-dark); margin-bottom: 12px; }
-    .coming-soon p { color: var(--color-text-sub); line-height: 1.8; margin-bottom: 24px; }
-    .coming-soon .badge { display: inline-block; background: var(--color-primary-light); color: var(--color-primary-dark); font-size: 0.8rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
-    .btn-back { display: inline-block; background: var(--color-primary); color: white; padding: 12px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.2s; }
-    .btn-back:hover { background: var(--color-primary-dark); }
-  </style>
-
-  <meta name="description" content="富士山・高山登山で注意すべき高山病の症状と対策を解説。予防薬・登り方・体調管理のポイントを詳しく紹介。">
-  <link rel="canonical" href="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/gear/altitude.html">
-  <meta property="og:type" content="article">
+  <meta name="description" content="高山病の症状・原因・予防法・対処法を徹底解説。富士山・北アルプス登山前に必読の高山病完全ガイド。">
   <meta property="og:title" content="高山病対策ガイド | にっぽんハイキングガイド">
-  <meta property="og:description" content="富士山・高山登山で注意すべき高山病の症状と対策を解説。予防薬・登り方・体調管理のポイントを詳しく紹介。">
+  <meta property="og:description" content="高山病の症状・原因・予防法・対処法を徹底解説。富士山・北アルプス登山前に必読の高山病完全ガイド。">
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/gear/altitude.html">
   <meta property="og:site_name" content="にっぽんハイキングガイド">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary">
+  <title>高山病対策ガイド｜症状・予防・対処法 | にっぽんハイキングガイド</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="canonical" href="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/gear/altitude.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Article","headline":"高山病対策ガイド","description":"高山病の予防と対処法を解説","url":"https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/gear/altitude.html"}
+  {"@context":"https://schema.org","@type":"Article","headline":"高山病対策ガイド","description":"高山病の症状・予防・対処法を解説","author":{"@type":"Organization","name":"にっぽんハイキングガイド"},"datePublished":"2026-04-26","url":"https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/gear/altitude.html"}
   </script>
+  <style>
+    .page-hero{padding:60px 20px;text-align:center;color:white;}
+    .page-hero h1{font-size:2.2rem;margin-bottom:12px;}
+    .page-hero p{font-size:1.05rem;opacity:.92;max-width:620px;margin:0 auto;}
+    .content-wrap{max-width:900px;margin:0 auto;padding:40px 20px;}
+    .section-h2{font-size:1.6rem;font-weight:700;color:#1b4332;margin:48px 0 12px;border-bottom:3px solid #2d6a4f;padding-bottom:8px;}
+    .course-list{display:grid;gap:20px;margin:24px 0;}
+    .course-item{background:white;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.07);padding:24px;display:flex;gap:20px;align-items:flex-start;}
+    .ci-emoji{font-size:2.5rem;flex-shrink:0;}
+    .ci-body{}
+    .ci-title{font-size:1.15rem;font-weight:700;color:#1b4332;margin-bottom:4px;}
+    .ci-meta{font-size:.82rem;color:#666;margin-bottom:8px;}
+    .ci-desc{font-size:.9rem;color:#444;line-height:1.7;margin-bottom:10px;}
+    .ci-link{display:inline-block;background:#2d6a4f;color:white;padding:7px 18px;border-radius:6px;font-size:.85rem;font-weight:700;text-decoration:none;}
+    .ci-link:hover{background:#1b4332;}
+    .diff-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.75rem;font-weight:700;margin-right:6px;}
+    .diff-easy{background:#d8f3dc;color:#1b4332;}
+    .diff-medium{background:#fff3cd;color:#856404;}
+    .diff-hard{background:#fde8e8;color:#9b1c1c;}
+    .info-box{background:#e8f4ea;border-left:4px solid #2d6a4f;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;}
+    .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0;}
+    .tip-card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+    .tip-card.caution{border-top:3px solid #e63946;}
+    .tip-card.info{border-top:3px solid #2d6a4f;}
+    .tip-card.tip{border-top:3px solid #f77f00;}
+    .tip-icon{font-size:1.5rem;margin-bottom:8px;}
+    .tip-card h3{font-size:1rem;font-weight:700;color:#1b4332;margin-bottom:6px;}
+    .tip-card p{font-size:.88rem;color:#444;line-height:1.6;}
+    .gear-btn{display:inline-block;background:#f77f00;color:white;padding:14px 32px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:16px;}
+    .gear-btn:hover{background:#e06c00;}
+    .article-body{font-size:.95rem;color:#333;line-height:1.9;}
+    .article-body h2{font-size:1.5rem;font-weight:700;color:#1b4332;margin:40px 0 12px;border-bottom:2px solid #d8f3dc;padding-bottom:6px;}
+    .article-body h3{font-size:1.15rem;font-weight:700;color:#2d6a4f;margin:28px 0 8px;}
+    .article-body p{margin-bottom:16px;}
+    .article-body ul{margin:8px 0 16px 20px;}
+    .article-body li{margin-bottom:6px;}
+    .article-meta{font-size:.82rem;color:#888;margin-bottom:32px;}
+    .alert{background:#fff3cd;border-left:4px solid #f77f00;border-radius:0 8px 8px 0;padding:14px 18px;margin:20px 0;font-size:.9rem;}
+    .alert-danger{background:#fde8e8;border-left:4px solid #e63946;}
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <a href="../index.html">
-          <span class="logo-icon">⛰️</span>
-          <span class="logo-text">にっぽんハイキングガイド</span>
-        </a>
-      </div>
-      <nav class="global-nav">
-        <ul>
-          <li><a href="../index.html#regions">地域から探す</a></li>
-          <li><a href="../index.html#difficulty">難易度から探す</a></li>
-          <li><a href="../index.html#season">季節から探す</a></li>
-          <li><a href="../gear/index.html" class="nav-gear">装備ガイド</a></li>
-        </ul>
-      </nav>
+      <div class="logo"><a href="../index.html"><span class="logo-icon">⛰️</span><span class="logo-text">にっぽんハイキングガイド</span></a></div>
+      <nav class="global-nav"><ul>
+        <li><a href="../index.html#regions">地域から探す</a></li>
+        <li><a href="../index.html#difficulty">難易度から探す</a></li>
+        <li><a href="../index.html#season">季節から探す</a></li>
+        <li><a href="../gear/index.html" class="nav-gear">装備ガイド</a></li>
+      </ul></nav>
       <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
     </div>
   </header>
-
-  <nav class="breadcrumb">
-    <div class="container">
-      <ol><li><a href="../index.html">ホーム</a></li><li><a href="../gear/index.html">装備ガイド</a></li><li>高山病対策</li></ol>
-    </div>
-  </nav>
-
+  <nav class="breadcrumb"><div class="container"><ol><li><a href="../index.html">ホーム</a></li><li><a href="../gear/index.html">装備ガイド</a></li><li>高山病対策</li></ol></div></nav>
+  <div class="page-hero" style="background:linear-gradient(135deg,#023e8a 0%,#0077b6 100%);padding:60px 20px;text-align:center;color:white;">
+    <h1 style="font-size:2rem;">🏔️ 高山病対策ガイド</h1>
+    <p style="font-size:1.05rem;opacity:.92;max-width:600px;margin:10px auto 0;">富士山・北アルプス登山で知っておくべき高山病の症状・予防・対処法を徹底解説します。</p>
+  </div>
   <main>
-    <div class="coming-soon">
-      <div class="icon">🏔️</div>
-      <span class="badge">準備中</span>
-      <h1>高山病対策ガイド</h1>
-      <p>富士山など高山でのハイキングに必須の高山病対策。<br>現在コンテンツを準備中です。<br>もうしばらくお待ちください。</p>
-      <a href="../index.html" class="btn-back">トップページへ戻る</a>
+    <div class="content-wrap">
+      <p class="article-meta">監修：にっぽんハイキングガイド編集部 | 更新日: 2026-04-26</p>
+      <div class="article-body">
+        <p>富士山や北アルプスなど、標高2,000mを超える山に登ると「高山病」になる可能性があります。高山病は油断すると命に関わる症状に進展することもあるため、事前の知識と対策が重要です。</p>
+
+        <h2>高山病とは？</h2>
+        <p>高山病（急性高山病）は、標高が上がるにつれて空気中の酸素濃度が低くなることで起こる症状の総称です。標高3,000mでは酸素濃度が平地の約70%になります。</p>
+        <ul>
+          <li><strong>軽症：</strong> 頭痛・吐き気・食欲不振・倦怠感・眠れない</li>
+          <li><strong>中症：</strong> 激しい頭痛・嘔吐・ふらつき・歩行困難</li>
+          <li><strong>重症：</strong> 高地肺水腫・高地脳浮腫（意識障害・生命の危機）</li>
+        </ul>
+        <div class="alert alert-danger">
+          <strong>⚠️ 重要：</strong> 軽症でも無視して登り続けると急速に悪化することがあります。症状が出たら必ず下山・休息してください。
+        </div>
+
+        <h2>高山病になりやすい人</h2>
+        <p>高山病は体力・年齢・性別に関係なく誰でもなる可能性があります。以下の条件が重なるとリスクが上がります：</p>
+        <ul>
+          <li>急激に標高を上げた（例：バスで富士山5合目まで一気に移動）</li>
+          <li>睡眠不足・疲れた状態で登山</li>
+          <li>脱水状態</li>
+          <li>前回も高山病になった経験がある</li>
+          <li>過去に問題なかった＝今回も大丈夫とは限らない</li>
+        </ul>
+
+        <h2>高山病の予防法</h2>
+        <h3>1. ゆっくり登る（最重要）</h3>
+        <p>1時間に登る標高差を300m以下に抑えましょう。「ゆっくりゆっくり」が高山病予防の基本中の基本です。富士山では五合目に着いたらすぐ登り始めず、30分〜1時間は現地で体を慣らしてから出発してください。</p>
+
+        <h3>2. 水分をこまめに補給</h3>
+        <p>1時間に500ml程度の水分補給を目安に。アルコール・カフェインは利尿作用があるため、登山中は控えるのが賢明です。</p>
+
+        <h3>3. 深呼吸を意識する</h3>
+        <p>深呼吸を意識して酸素をしっかり取り込みましょう。歩きながら腹式呼吸を練習するのも効果的です。</p>
+
+        <h3>4. 適切な休息と睡眠</h3>
+        <p>山小屋に泊まって体を高度に慣らしてから山頂を目指す「高所順応」が効果的です。富士山では七〜八合目の山小屋宿泊が推奨されています。</p>
+
+        <h3>5. 予防薬（ダイアモックス）</h3>
+        <p>アセタゾラミド（商品名：ダイアモックス）は高山病の予防・治療薬として医師が処方できます。登山2日前から服用すると効果的。副作用（手足のしびれ・頻尿など）があるため、必ず医師に相談してから。</p>
+
+        <h2>高山病の対処法</h2>
+        <p>以下の症状が出た場合の対処法です：</p>
+        <ul>
+          <li><strong>頭痛・吐き気：</strong> まず休息。水分補給。症状が続く・悪化するなら下山。</li>
+          <li><strong>市販薬：</strong> イブプロフェン（頭痛に効果的）。アスピリンは避ける。</li>
+          <li><strong>下山が最善：</strong> 300〜500m下山するだけで症状が劇的に改善することが多い。</li>
+          <li><strong>酸素缶：</strong> 一時的な症状緩和に有効。ただし根本解決にはならない。</li>
+        </ul>
+        <div class="alert">
+          <strong>💡 判断の目安：</strong> 「頭痛薬を飲んで1〜2時間休んでも改善しない」「症状が悪化している」の場合は迷わず下山してください。
+        </div>
+
+        <h2>富士山での高山病対策まとめ</h2>
+        <ul>
+          <li>五合目に着いたら30分以上かけて体を慣らす</li>
+          <li>登山ペースは「友人と会話できる速さ」を保つ</li>
+          <li>弾丸登山（夜間ノンストップ）は絶対に避ける</li>
+          <li>七〜八合目の山小屋に宿泊して順応</li>
+          <li>水は1.5L以上持参し、こまめに飲む</li>
+          <li>症状が出たら潔く下山の判断を</li>
+        </ul>
+      </div>
+      <div style="text-align:center;margin:48px 0;">
+        <p style="font-size:1rem;color:#444;margin-bottom:8px;">安全な登山のための装備を確認しよう</p>
+        <a href="../gear/safety.html" class="gear-btn">安全装備ガイドを見る →</a>
+      </div>
     </div>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-logo"><span>⛰️</span> にっぽんハイキングガイド</div>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="../about.html">このサイトについて</a></li>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-          <li><a href="../sitemap.html">サイトマップ</a></li>
-        </ul>
-      </nav>
+      <nav class="footer-nav"><ul>
+        <li><a href="../about.html">このサイトについて</a></li>
+        <li><a href="../privacy.html">プライバシーポリシー</a></li>
+        <li><a href="../contact.html">お問い合わせ</a></li>
+        <li><a href="../sitemap.html">サイトマップ</a></li>
+      </ul></nav>
       <p class="footer-copy">&copy; 2026 にっぽんハイキングガイド. All rights reserved.</p>
     </div>
   </footer>

@@ -11,78 +11,185 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>上級者向けコース | にっぽんハイキングガイド</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    .coming-soon { text-align: center; padding: 80px 20px; max-width: 600px; margin: 0 auto; }
-    .coming-soon .icon { font-size: 4rem; margin-bottom: 16px; }
-    .coming-soon h1 { font-size: 1.8rem; color: var(--color-primary-dark); margin-bottom: 12px; }
-    .coming-soon p { color: var(--color-text-sub); line-height: 1.8; margin-bottom: 24px; }
-    .coming-soon .badge { display: inline-block; background: var(--color-primary-light); color: var(--color-primary-dark); font-size: 0.8rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
-    .btn-back { display: inline-block; background: var(--color-primary); color: white; padding: 12px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: background 0.2s; }
-    .btn-back:hover { background: var(--color-primary-dark); }
-  </style>
-
-  <meta name="description" content="上級者向けハイキングコース一覧。本格的な登山技術・装備・体力が必要な難易度の高い山を紹介。">
-  <link rel="canonical" href="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/difficulty/advanced.html">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="上級者向けコース | にっぽんハイキングガイド">
-  <meta property="og:description" content="上級者向けハイキングコース一覧。本格的な登山技術・装備・体力が必要な難易度の高い山を紹介。">
+  <meta name="description" content="上級者向けハイキングコース一覧。岩場・鎖場・縦走など本格的な山岳登山コースを紹介。">
+  <meta property="og:title" content="上級ハイキングコース | にっぽんハイキングガイド">
+  <meta property="og:description" content="上級者向けハイキングコース一覧。岩場・鎖場・縦走など本格的な山岳登山コースを紹介。">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/difficulty/advanced.html">
   <meta property="og:site_name" content="にっぽんハイキングガイド">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary">
+  <title>上級ハイキングコース | にっぽんハイキングガイド</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="canonical" href="https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/difficulty/advanced.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    .page-hero{padding:60px 20px;text-align:center;color:white;}
+    .page-hero h1{font-size:2.2rem;margin-bottom:12px;}
+    .page-hero p{font-size:1.05rem;opacity:.92;max-width:620px;margin:0 auto;}
+    .content-wrap{max-width:900px;margin:0 auto;padding:40px 20px;}
+    .section-h2{font-size:1.6rem;font-weight:700;color:#1b4332;margin:48px 0 12px;border-bottom:3px solid #2d6a4f;padding-bottom:8px;}
+    .course-list{display:grid;gap:20px;margin:24px 0;}
+    .course-item{background:white;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.07);padding:24px;display:flex;gap:20px;align-items:flex-start;}
+    .ci-emoji{font-size:2.5rem;flex-shrink:0;}
+    .ci-body{}
+    .ci-title{font-size:1.15rem;font-weight:700;color:#1b4332;margin-bottom:4px;}
+    .ci-meta{font-size:.82rem;color:#666;margin-bottom:8px;}
+    .ci-desc{font-size:.9rem;color:#444;line-height:1.7;margin-bottom:10px;}
+    .ci-link{display:inline-block;background:#2d6a4f;color:white;padding:7px 18px;border-radius:6px;font-size:.85rem;font-weight:700;text-decoration:none;}
+    .ci-link:hover{background:#1b4332;}
+    .diff-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.75rem;font-weight:700;margin-right:6px;}
+    .diff-easy{background:#d8f3dc;color:#1b4332;}
+    .diff-medium{background:#fff3cd;color:#856404;}
+    .diff-hard{background:#fde8e8;color:#9b1c1c;}
+    .info-box{background:#e8f4ea;border-left:4px solid #2d6a4f;border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0;}
+    .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:24px 0;}
+    .tip-card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+    .tip-card.caution{border-top:3px solid #e63946;}
+    .tip-card.info{border-top:3px solid #2d6a4f;}
+    .tip-card.tip{border-top:3px solid #f77f00;}
+    .tip-icon{font-size:1.5rem;margin-bottom:8px;}
+    .tip-card h3{font-size:1rem;font-weight:700;color:#1b4332;margin-bottom:6px;}
+    .tip-card p{font-size:.88rem;color:#444;line-height:1.6;}
+    .gear-btn{display:inline-block;background:#f77f00;color:white;padding:14px 32px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:16px;}
+    .gear-btn:hover{background:#e06c00;}
+    .article-body{font-size:.95rem;color:#333;line-height:1.9;}
+    .article-body h2{font-size:1.5rem;font-weight:700;color:#1b4332;margin:40px 0 12px;border-bottom:2px solid #d8f3dc;padding-bottom:6px;}
+    .article-body h3{font-size:1.15rem;font-weight:700;color:#2d6a4f;margin:28px 0 8px;}
+    .article-body p{margin-bottom:16px;}
+    .article-body ul{margin:8px 0 16px 20px;}
+    .article-body li{margin-bottom:6px;}
+    .article-meta{font-size:.82rem;color:#888;margin-bottom:32px;}
+    .alert{background:#fff3cd;border-left:4px solid #f77f00;border-radius:0 8px 8px 0;padding:14px 18px;margin:20px 0;font-size:.9rem;}
+    .alert-danger{background:#fde8e8;border-left:4px solid #e63946;}
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">
-        <a href="../index.html">
-          <span class="logo-icon">⛰️</span>
-          <span class="logo-text">にっぽんハイキングガイド</span>
-        </a>
-      </div>
-      <nav class="global-nav">
-        <ul>
-          <li><a href="../index.html#regions">地域から探す</a></li>
-          <li><a href="../index.html#difficulty">難易度から探す</a></li>
-          <li><a href="../index.html#season">季節から探す</a></li>
-          <li><a href="../gear/index.html" class="nav-gear">装備ガイド</a></li>
-        </ul>
-      </nav>
+      <div class="logo"><a href="../index.html"><span class="logo-icon">⛰️</span><span class="logo-text">にっぽんハイキングガイド</span></a></div>
+      <nav class="global-nav"><ul>
+        <li><a href="../index.html#regions">地域から探す</a></li>
+        <li><a href="../index.html#difficulty">難易度から探す</a></li>
+        <li><a href="../index.html#season">季節から探す</a></li>
+        <li><a href="../gear/index.html" class="nav-gear">装備ガイド</a></li>
+      </ul></nav>
       <button class="nav-toggle" aria-label="メニュー">&#9776;</button>
     </div>
   </header>
-
-  <nav class="breadcrumb">
-    <div class="container">
-      <ol><li><a href="../index.html">ホーム</a></li><li>上級者向け</li></ol>
-    </div>
-  </nav>
-
+  <nav class="breadcrumb"><div class="container"><ol><li><a href="../index.html">ホーム</a></li><li>上級者向けコース</li></ol></div></nav>
+  <div class="page-hero" style="background:linear-gradient(135deg,#1b4332 0%,#081c15 100%);">
+    <h1>🔴 上級者向けコース一覧</h1>
+    <p>岩場・鎖場・長距離縦走など、経験と体力が問われる本格的な山岳コースです。十分な準備と装備で挑んでください。</p>
+  </div>
   <main>
-    <div class="coming-soon">
-      <div class="icon">🏔️</div>
-      <span class="badge">準備中</span>
-      <h1>上級者向けコース</h1>
-      <p>本格的な登山技術が必要な難コース一覧。<br>現在コンテンツを準備中です。<br>もうしばらくお待ちください。</p>
-      <a href="../index.html" class="btn-back">トップページへ戻る</a>
+    <div class="content-wrap">
+      <h2 class="section-h2">おすすめコース一覧</h2>
+      <div class="course-list">
+        <div class="course-item">
+          <div class="ci-emoji">🏔️</div>
+          <div class="ci-body">
+            <div class="ci-title">北アルプス縦走（槍〜穂高） <span class="diff-badge diff-hard">上級</span></div>
+            <div class="ci-meta">中部 | 標高3,190m・距離30km以上・所要2〜3泊</div>
+            <p class="ci-desc">日本最高難度の縦走路。岩稜帯・鎖場連続。経験・体力・装備の三拍子が揃った登山者向け。</p>
+            <a href="#" class="ci-link">詳しく見る →</a>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="ci-emoji">🦅</div>
+          <div class="ci-body">
+            <div class="ci-title">剱岳（富山） <span class="diff-badge diff-hard">上級</span></div>
+            <div class="ci-meta">中部 | 標高2,999m・距離10km・所要8時間</div>
+            <p class="ci-desc">「岩と雪の殿堂」。カニのよこばいなど難所が続く。命がけの百名山。</p>
+            <a href="#" class="ci-link">詳しく見る →</a>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="ci-emoji">⛩️</div>
+          <div class="ci-body">
+            <div class="ci-title">石鎚山・天狗岳（愛媛） <span class="diff-badge diff-hard">上級</span></div>
+            <div class="ci-meta">四国 | 標高1,982m・距離8km・所要5時間</div>
+            <p class="ci-desc">西日本最高峰。三ノ鎖場・天狗岳ナイフリッジは上級者レベルの緊張感。</p>
+            <a href="../regions/shikoku/ishizuchi.html" class="ci-link">詳しく見る →</a>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="ci-emoji">🐻</div>
+          <div class="ci-body">
+            <div class="ci-title">羅臼岳（北海道） <span class="diff-badge diff-hard">上級</span></div>
+            <div class="ci-meta">北海道 | 標高1,661m・距離15km・所要9時間</div>
+            <p class="ci-desc">ヒグマが最も多い知床の最高峰。ガイド同行必須。体力・熊対策の両方が必要。</p>
+            <a href="#" class="ci-link">詳しく見る →</a>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="ci-emoji">🌿</div>
+          <div class="ci-body">
+            <div class="ci-title">屋久島・宮之浦岳（鹿児島） <span class="diff-badge diff-hard">上級</span></div>
+            <div class="ci-meta">九州 | 標高1,936m・距離26km・所要1泊2日</div>
+            <p class="ci-desc">屋久島最高峰は縦走コース。縄文杉よりさらにハードな本格的な山岳登山。</p>
+            <a href="../regions/kyushu/yakushima.html" class="ci-link">詳しく見る →</a>
+          </div>
+        </div>
+        <div class="course-item">
+          <div class="ci-emoji">🏔️</div>
+          <div class="ci-body">
+            <div class="ci-title">槍ヶ岳（長野・岐阜） <span class="diff-badge diff-hard">上級</span></div>
+            <div class="ci-meta">中部 | 標高3,180m・距離20km・所要1泊2日</div>
+            <p class="ci-desc">独特の穂先が印象的な日本アルプスの名峰。山頂直下の岩場クライムが難所。</p>
+            <a href="#" class="ci-link">詳しく見る →</a>
+          </div>
+        </div>
+      </div>
+      <h2 class="section-h2">登山のコツとアドバイス</h2>
+      <div class="tips-grid">
+        <div class="tip-card caution">
+          <div class="tip-icon">🪖</div>
+          <h3>ヘルメット必携</h3>
+          <p>上級コースでは落石・転倒時の頭部保護が必須。軽量ヘルメットを必ず持参。</p>
+        </div>
+        <div class="tip-card caution">
+          <div class="tip-icon">🧗</div>
+          <h3>鎖場・岩場の練習を</h3>
+          <p>いきなり本番は危険。近郊の岩場や低山の鎖場で技術を磨いてから挑戦を。</p>
+        </div>
+        <div class="tip-card info">
+          <div class="tip-icon">🤝</div>
+          <h3>ガイドの活用を</h3>
+          <p>初めて挑む上級ルートは経験豊富なガイドと同行するのが最も安全。</p>
+        </div>
+        <div class="tip-card caution">
+          <div class="tip-icon">⚠️</div>
+          <h3>引き返す勇気を持つ</h3>
+          <p>天気の悪化・体調不良・時間オーバーを感じたら即下山。山は逃げない。</p>
+        </div>
+        <div class="tip-card caution">
+          <div class="tip-icon">📡</div>
+          <h3>ビーコン・衛星電話</h3>
+          <p>圏外になる山域ではGPSビーコン・衛星電話・笛の携帯を。</p>
+        </div>
+        <div class="tip-card tip">
+          <div class="tip-icon">🏋️</div>
+          <h3>体力は事前に鍛える</h3>
+          <p>上級登山の1〜2ヶ月前から週3回以上の有酸素運動・筋トレで準備を。</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin:48px 0;">
+        <p style="font-size:1rem;color:#444;margin-bottom:8px;">装備選びに迷ったら</p>
+        <a href="../gear/index.html" class="gear-btn">初心者向け装備ガイドを見る →</a>
+      </div>
     </div>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-logo"><span>⛰️</span> にっぽんハイキングガイド</div>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="../about.html">このサイトについて</a></li>
-          <li><a href="../privacy.html">プライバシーポリシー</a></li>
-          <li><a href="../contact.html">お問い合わせ</a></li>
-          <li><a href="../sitemap.html">サイトマップ</a></li>
-        </ul>
-      </nav>
+      <nav class="footer-nav"><ul>
+        <li><a href="../about.html">このサイトについて</a></li>
+        <li><a href="../privacy.html">プライバシーポリシー</a></li>
+        <li><a href="../contact.html">お問い合わせ</a></li>
+        <li><a href="../sitemap.html">サイトマップ</a></li>
+      </ul></nav>
       <p class="footer-copy">&copy; 2026 にっぽんハイキングガイド. All rights reserved.</p>
     </div>
   </footer>
