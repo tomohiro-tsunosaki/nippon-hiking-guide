@@ -4,4 +4,4 @@ Allow: /
 Disallow: /contact.html
 Disallow: /privacy.html
 
-Sitemap: https://tomohiro-tsunosaki.github.io/nippon-hiking-guide/sitemap.xml
+Sitemap: https://nippon-hiking-guide.com/sitemap.xml
