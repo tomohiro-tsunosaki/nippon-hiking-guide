@@ -744,6 +744,12 @@ section { padding: 80px 0; }
 }
 
 /* ==============================
+   検索ドロップダウン
+============================== */
+.search-dropdown a:hover { background: #f0f7f4; }
+.search-dropdown a:last-child { border-bottom: none; }
+
+/* ==============================
    レスポンシブ
 ============================== */
 @media (max-width: 1024px) {

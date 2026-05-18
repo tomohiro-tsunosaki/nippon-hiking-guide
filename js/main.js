@@ -60,19 +60,48 @@ animateItems.forEach(item => {
   observer.observe(item);
 });
 
-// 検索ボックス（将来の実装用プレースホルダー）
+// サイト内検索の実装
 const searchBtn = document.querySelector('.search-btn');
 const searchInput = document.querySelector('.search-input');
 
 if (searchBtn && searchInput) {
-  searchBtn.addEventListener('click', () => {
-    const query = searchInput.value.trim();
-    if (query) {
-      alert(`「${query}」の検索機能は準備中です。`);
-    }
-  });
+  // 検索結果ドロップダウンを作成
+  const dropdown = document.createElement('div');
+  dropdown.className = 'search-dropdown';
+  dropdown.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:white;border-radius:0 0 12px 12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);max-height:360px;overflow-y:auto;z-index:1000;display:none;';
+  searchInput.parentElement.style.position = 'relative';
+  searchInput.parentElement.appendChild(dropdown);
 
+  function doSearch(query) {
+    if (!query || query.length < 2) { dropdown.style.display = 'none'; return; }
+    const q = query.toLowerCase();
+    const results = SEARCH_DATA.filter(p =>
+      p.title.toLowerCase().includes(q) ||
+      p.tags.toLowerCase().includes(q) ||
+      p.desc.toLowerCase().includes(q)
+    ).slice(0, 8);
+
+    if (results.length === 0) {
+      dropdown.innerHTML = '<div style="padding:16px;color:#666;font-size:.9rem;">「' + query + '」に一致するページが見つかりませんでした。</div>';
+    } else {
+      dropdown.innerHTML = results.map(r =>
+        '<a href="' + r.url + '" style="display:block;padding:12px 16px;border-bottom:1px solid #f0f0f0;text-decoration:none;color:#1b4332;font-weight:700;font-size:.9rem;">' +
+        r.title + '<span style="display:block;font-size:.78rem;color:#666;font-weight:400;margin-top:2px;">' + r.desc + '</span></a>'
+      ).join('');
+    }
+    dropdown.style.display = 'block';
+  }
+
+  searchInput.addEventListener('input', () => doSearch(searchInput.value.trim()));
+  searchBtn.addEventListener('click', () => {
+    const q = searchInput.value.trim();
+    if (q) doSearch(q);
+  });
   searchInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') searchBtn.click();
+    if (e.key === 'Enter') { const r = SEARCH_DATA.find(p => p.title.toLowerCase().includes(searchInput.value.toLowerCase())); if(r) location.href = r.url; }
+    if (e.key === 'Escape') dropdown.style.display = 'none';
+  });
+  document.addEventListener('click', (e) => {
+    if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) dropdown.style.display = 'none';
   });
 }
