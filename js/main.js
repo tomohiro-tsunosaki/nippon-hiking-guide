@@ -92,7 +92,16 @@ if (searchBtn && searchInput) {
     dropdown.style.display = 'block';
   }
 
-  searchInput.addEventListener('input', () => doSearch(searchInput.value.trim()));
+  // 日本語IME変換中は中間文字で誤発火しないよう制御
+  let isComposing = false;
+  searchInput.addEventListener('compositionstart', () => { isComposing = true; });
+  searchInput.addEventListener('compositionend', () => {
+    isComposing = false;
+    doSearch(searchInput.value.trim());
+  });
+  searchInput.addEventListener('input', () => {
+    if (!isComposing) doSearch(searchInput.value.trim());
+  });
   searchBtn.addEventListener('click', () => {
     const q = searchInput.value.trim();
     if (q) doSearch(q);
