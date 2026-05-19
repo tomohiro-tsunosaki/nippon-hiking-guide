@@ -801,3 +801,7 @@ section { padding: 80px 0; }
   .search-input { border-radius: var(--radius) var(--radius) 0 0; }
   .search-btn { border-radius: 0 0 var(--radius) var(--radius); text-align: center; }
 }
+
+/* アフィリエイトバナー共通 */
+.af-banner { text-align: center; padding: 20px 0; overflow: hidden; }
+.af-banner img { max-width: 100%; height: auto; }
