@@ -44,6 +44,7 @@ const SEARCH_DATA = [
   { title: "トレッキングポールの選び方", url: "gear/pole.html", tags: "ポール ストック 選び方", desc: "膝への負担を軽減するポールの使い方と選び方。" },
   { title: "ウェア・レイヤリング", url: "gear/wear.html", tags: "ウェア レイヤリング 速乾 防寒", desc: "登山の重ね着（レイヤリング）の基本。" },
   { title: "安全装備ガイド", url: "gear/safety.html", tags: "安全 ヘッドライト 救急 GPS 装備", desc: "緊急時に命を守る安全装備の選び方。" },
+  { title: "高山病対策ガイド", url: "gear/altitude.html", tags: "高山病 予防 対処 富士山 北アルプス 症状 高度", desc: "高山病の症状・原因・予防法・対処法を徹底解説。" },
   { title: "富士山装備チェックリスト", url: "gear/fuji-checklist.html", tags: "富士山 装備 チェックリスト 持ち物", desc: "富士登山に必要な持ち物を完全リスト化。" },
 
   // 難易度・季節
