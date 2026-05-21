@@ -69,8 +69,8 @@ if (searchBtn && searchInput) {
   const dropdown = document.createElement('div');
   dropdown.className = 'search-dropdown';
   dropdown.style.cssText = 'position:absolute;top:100%;left:0;right:0;background:white;border-radius:0 0 12px 12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);max-height:360px;overflow-y:auto;z-index:1000;display:none;';
-  searchInput.parentElement.style.position = 'relative';
-  searchInput.parentElement.appendChild(dropdown);
+  const searchWrap = searchInput.closest('.hero-search-wrap');
+  searchWrap.appendChild(dropdown);
 
   function doSearch(query) {
     if (!query || query.length < 2) { dropdown.style.display = 'none'; return; }
