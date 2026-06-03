@@ -345,4 +345,44 @@
     <priority>0.7</priority>
   </url>
 
+
+  <!-- 新規追加山ページ（2026-06-01） -->
+  <url><loc>https://nippon-hiking-guide.com/regions/kanto/oyama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kanto/tanzawasan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kanto/mitakesan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kanto/kumotoriyama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/hokkaido/youteizan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/hokkaido/rishirizan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/hokkaido/tokachidake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/hokkaido/niseko.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/hokkaido/rausudake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/tohoku/hakkodasan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/tohoku/adatarasan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/tohoku/akitakomadake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/tohoku/iwateyama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/tohoku/gassan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chubu/norikuradake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chubu/ontakesan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chubu/hakusan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chubu/yarigadake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chubu/tsurugigatake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kinki/odaigahara.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kinki/kongosan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kinki/hieizan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kinki/omineyama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chugoku/azumayama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chugoku/sanbesan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chugoku/korouhanzan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chugoku/dogoyama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/chugoku/hibayama.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/shikoku/tsurugizan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/shikoku/sanrei.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/shikoku/kankakei.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/shikoku/tsutsugazan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/shikoku/higashiakaishi.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kyushu/kujusan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kyushu/kaimonodake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kyushu/unzendake.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://nippon-hiking-guide.com/regions/kyushu/sobozan.html</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
 </urlset>
