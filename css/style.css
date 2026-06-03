@@ -773,6 +773,7 @@ section { padding: 80px 0; }
     top: 64px;
     left: 0;
     right: 0;
+    z-index: 999;
     background: white;
     border-top: 1px solid #e0e8e2;
     padding: 20px;
